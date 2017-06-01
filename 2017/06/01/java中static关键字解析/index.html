@@ -100,10 +100,12 @@
 <meta property="og:url" content="http://www.ryanhome.top/2017/06/01/java中static关键字解析/index.html">
 <meta property="og:site_name" content="池木的独立博客">
 <meta property="og:description" content="前言　　最近写代码的时候发现一些java基础性的东西有些遗忘了，这是一件多么恐怖的事情，所以要狠心恶补一下java基础 正文（一）static关键字的用途　　在《Java编程思想》P86页有这样一段话： 　　“static方法就是没有this的方法。在static方法内部不能调用非静态方法，反过来是可以的。而且可以在没有创建任何对象的前提下，仅仅通过类本身来调用static方法。这实际上正是sta">
-<meta property="og:updated_time" content="2017-06-01T13:00:20.000Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/xz1035536883/ImageControll/master/res/demo1.png">
+<meta property="og:updated_time" content="2017-06-01T13:04:13.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java中static关键字解析">
 <meta name="twitter:description" content="前言　　最近写代码的时候发现一些java基础性的东西有些遗忘了，这是一件多么恐怖的事情，所以要狠心恶补一下java基础 正文（一）static关键字的用途　　在《Java编程思想》P86页有这样一段话： 　　“static方法就是没有this的方法。在static方法内部不能调用非静态方法，反过来是可以的。而且可以在没有创建任何对象的前提下，仅仅通过类本身来调用static方法。这实际上正是sta">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/xz1035536883/ImageControll/master/res/demo1.png">
 
 
 
@@ -415,7 +417,7 @@
 <p>２）static方法</p>
 <p>　　static方法一般称作静态方法，由于静态方法不依赖于任何对象就可以进行访问，因此对于静态方法来说，是没有this的，因为它不依附于任何对象，既然都没有对象，就谈不上this了。并且由于这个特性，在静态方法中不能访问类的非静态成员变量和非静态成员方法，因为非静态成员方法/变量都是必须依赖具体的对象才能够被调用。</p>
 <p>　　但是要注意的是，虽然在静态方法中不能访问非静态成员方法和非静态成员变量，但是在非静态成员方法中是可以访问静态成员方法/变量的。举个简单的例子：</p>
-<p><img src="" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/xz1035536883/ImageControll/master/res/demo1.png" alt=""></p>
 <p>在上面的代码中，由于print2方法是独立于对象存在的，可以直接用过类名调用。假如说可以在静态方法中访问非静态方法/变量的话，那么如果在main方法中有下面一条语句：</p>
 <p>　　MyObject.print2();</p>
 <p>　　此时对象都没有，str2根本就不存在，所以就会产生矛盾了。同样对于方法也是一样，由于你无法预知在print1方法中是否访问了非静态成员变量，所以也禁止在静态成员方法中访问非静态成员方法。</p>
