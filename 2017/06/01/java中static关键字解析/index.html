@@ -100,7 +100,7 @@
 <meta property="og:url" content="http://www.ryanhome.top/2017/06/01/java中static关键字解析/index.html">
 <meta property="og:site_name" content="池木的独立博客">
 <meta property="og:description" content="前言　　最近写代码的时候发现一些java基础性的东西有些遗忘了，这是一件多么恐怖的事情，所以要狠心恶补一下java基础 正文（一）static关键字的用途　　在《Java编程思想》P86页有这样一段话： 　　“static方法就是没有this的方法。在static方法内部不能调用非静态方法，反过来是可以的。而且可以在没有创建任何对象的前提下，仅仅通过类本身来调用static方法。这实际上正是sta">
-<meta property="og:updated_time" content="2017-06-01T12:42:47.000Z">
+<meta property="og:updated_time" content="2017-06-01T13:00:20.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java中static关键字解析">
 <meta name="twitter:description" content="前言　　最近写代码的时候发现一些java基础性的东西有些遗忘了，这是一件多么恐怖的事情，所以要狠心恶补一下java基础 正文（一）static关键字的用途　　在《Java编程思想》P86页有这样一段话： 　　“static方法就是没有this的方法。在static方法内部不能调用非静态方法，反过来是可以的。而且可以在没有创建任何对象的前提下，仅仅通过类本身来调用static方法。这实际上正是sta">
@@ -406,6 +406,7 @@
 <h3 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h3><h5 id="（一）static关键字的用途"><a href="#（一）static关键字的用途" class="headerlink" title="（一）static关键字的用途"></a>（一）static关键字的用途</h5><p>　　在《Java编程思想》P86页有这样一段话：</p>
 <p>　　<font color="#0099ff">“static方法就是没有this的方法。在static方法内部不能调用非静态方法，反过来是可以的。而且可以在没有创建任何对象的前提下，仅仅通过类本身来调用static方法。这实际上正是static方法的主要用途。”</font></p>
 <p>　　这段话虽然只是说明了static方法的特殊之处，但是可以看出static关键字的基本作用，简而言之，一句话来描述就是：<font color="red">方便在没有创建对象的情况下来进行调用（方法,变量）</font></p>
+<a id="more"></a>
 <p>　　很显然，被static关键字修饰的方法或者变量不需要依赖于对象来进行访问，只要类被加载了，就可以通过类名去进行访问。</p>
 <p>　　static可以用来修饰类的成员方法、类的成员变量，另外可以编写static代码块来优化程序性能。</p>
 <p>１）static变量</p>
@@ -583,8 +584,8 @@ myclass constructor
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/06/01/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2017/06/01/java中的构造函数/" rel="next" title="java中的构造函数">
+                <i class="fa fa-chevron-left"></i> java中的构造函数
               </a>
             
           </div>
@@ -696,7 +697,7 @@ myclass constructor
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">8</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -718,7 +719,7 @@ myclass constructor
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

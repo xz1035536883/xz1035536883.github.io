@@ -19,7 +19,7 @@
     <title>Hello World</title>
     <link href="http://www.ryanhome.top/2017/06/01/hello-world/"/>
     <id>http://www.ryanhome.top/2017/06/01/hello-world/</id>
-    <published>2017-06-01T12:43:02.179Z</published>
+    <published>2017-06-01T13:00:28.696Z</published>
     <updated>2017-06-01T08:16:15.000Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
@@ -49,16 +49,84 @@
   </entry>
   
   <entry>
+    <title>java中的构造函数</title>
+    <link href="http://www.ryanhome.top/2017/06/01/java%E4%B8%AD%E7%9A%84%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0/"/>
+    <id>http://www.ryanhome.top/2017/06/01/java中的构造函数/</id>
+    <published>2017-06-01T12:45:52.000Z</published>
+    <updated>2017-06-01T13:00:09.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="（一）构造函数概念"><a href="#（一）构造函数概念" class="headerlink" title="（一）构造函数概念"></a>（一）构造函数概念</h3><p>　　首先，构造函数是函数的一种特殊形式，特殊在哪里？</p>
+<p>　　1.构造函数中不需要定义返回类型（void是无需返回值的意思，请注意区分两者）</p>
+<p>　　2.构造函数的名称与所在的类名完全一致，其余的与函数的特性相同，可以带有参数列表，可以存在函数的重载现象</p>
+<a id="more"></a>
+<h3 id="（二）构造函数的格式"><a href="#（二）构造函数的格式" class="headerlink" title="（二）构造函数的格式"></a>（二）构造函数的格式</h3><pre><code>public class Demo{
+    private int num=0;
+    //无参构造函数
+    Demo(){
+        System.out.println(&quot;constractor_run&quot;);
+    }
+    //有参构造函数
+     Demo(int num){
+        System.out.println(&quot;constractor_args_run&quot;);
+    }
+    //普通成员函数
+    public void demoFunction(){
+        System.out.println(&quot;function_run&quot;);
+    }
+}
+</code></pre><p>　　在这里要说明一点，如果在类中我们不声明构造函数，JVM会帮我们默认生成一个空参数的构造函数；如果在类中我们声明了带参数列表的构造函数，JVM就不会帮我们默认生成一个空参数的构造函数，我们想要使用空参数的构造函数就必须自己去显式的声明一个空参的构造函数</p>
+<h3 id="（三）构造函数的作用"><a href="#（三）构造函数的作用" class="headerlink" title="（三）构造函数的作用"></a>（三）构造函数的作用</h3><p>　　通过开头的介绍，构造函数的轮廓已经渐渐清晰，那么为什么会有构造函数呢？构造函数有什么作用？构造函数是面向对象编程思想所需求的，它的主要作用有以下两个：</p>
+<p>　　1）  创建对象。任何一个对象创建时，都需要初始化才能使用，所以任何类想要创建实例对象就必须具有构造函数。</p>
+<p>　　2）  对象初始化。构造函数可以对对象进行初始化，并且是给与之格式（参数列表）相符合的对象初始化，是具有一定针对性的初始化函数。</p>
+<h3 id="（四）构造函数与普通函数的区别"><a href="#（四）构造函数与普通函数的区别" class="headerlink" title="（四）构造函数与普通函数的区别"></a>（四）构造函数与普通函数的区别</h3><p>　　1）  格式不同：</p>
+<p>　　　　构造函数不存在返回类型，函数名与所在类的类名一致；</p>
+<p>　　　　普通函数有返回类型，函数名可以根据需求进行命名。</p>
+<p>　　2）调用时期不同</p>
+<p>　　　　构造函数在类的对象创建时就运行；</p>
+<p>　　　　普通函数在对象调用时才会执行。</p>
+<p>　　3）执行次数不同</p>
+<p>　　　　一个对象创建后，其构造函数只执行一次，就是创建时执行；</p>
+<p>　　　　一个对象创建后，其普通函数可以执行多次，取决于对象的调用次数</p>
+<h3 id="（五）构造函数在继承中的特点"><a href="#（五）构造函数在继承中的特点" class="headerlink" title="（五）构造函数在继承中的特点"></a>（五）构造函数在继承中的特点</h3><p>　　在继承中，子类创建的对象可以调用父类的公共方法和属性，那么子类会不会调用父类的构造函数呢？子类的构造函数与父类的构造函数有什么关系？子类的构造函数需要注意些什么问题呢？下面来解答这三个问题。</p>
+<p>　　1）子类会不会调用父类的函数？</p>
+<p>　　　　子类继承父类，子类对象初始化时父类的构造函数也会执行，因为子类需要使用父类中的属性，子类需要知道是如何初始化的，所以子类初始化必然会调用父类的构造函数（除非父类没有属性，那么这个类的描述也太差了点，或者没有必要去创建这个类了）。</p>
+<p>　　2）子类的构造函数与父类的构造函数有什么关系？</p>
+<p>　　　　子类的构造函数中默认的第一行有一条隐式语句super()，该语句会访问父类中的空参数构造函数，除非父类中没有空参数的构造函数，那么子类构造函数的第一行必须显式调用父类的构造函数，即super(int x,…) 。</p>
+<p>　　3）子类的构造函数需要注意些什么问题呢？</p>
+<p>　　　　子类的构造函数中，super()语句代表调用了父类的构造函数；this()语句代表调用了子类自身的构造函数。需要注意的是，如果这两条语句显式写出来必须放在构造方法的第一行，而且这两条语句不能共存，一个构造函数中的第一行要么是this()要么是super()。</p>
+<p>　　　　为什么在第一行？因为需要首先进行初始化。</p>
+<p>　　　　为什么不能共存？因为this()代表的本类的其他构造函数，也会去调用super()，出现了this()就没有必要再出现super()了，重复调用没有意义。换言之，子类中至少有一个构造函数的开头为super()，当然可以隐式存在；也就是说至少有一个构造函数的开头不是this()。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;（一）构造函数概念&quot;&gt;&lt;a href=&quot;#（一）构造函数概念&quot; class=&quot;headerlink&quot; title=&quot;（一）构造函数概念&quot;&gt;&lt;/a&gt;（一）构造函数概念&lt;/h3&gt;&lt;p&gt;　　首先，构造函数是函数的一种特殊形式，特殊在哪里？&lt;/p&gt;
+&lt;p&gt;　　1.构造函数中不需要定义返回类型（void是无需返回值的意思，请注意区分两者）&lt;/p&gt;
+&lt;p&gt;　　2.构造函数的名称与所在的类名完全一致，其余的与函数的特性相同，可以带有参数列表，可以存在函数的重载现象&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="java基础" scheme="http://www.ryanhome.top/categories/java%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="java" scheme="http://www.ryanhome.top/tags/java/"/>
+    
+      <category term="构造函数" scheme="http://www.ryanhome.top/tags/%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>java中static关键字解析</title>
     <link href="http://www.ryanhome.top/2017/06/01/java%E4%B8%ADstatic%E5%85%B3%E9%94%AE%E5%AD%97%E8%A7%A3%E6%9E%90/"/>
     <id>http://www.ryanhome.top/2017/06/01/java中static关键字解析/</id>
     <published>2017-06-01T11:54:00.000Z</published>
-    <updated>2017-06-01T12:42:47.000Z</updated>
+    <updated>2017-06-01T13:00:20.000Z</updated>
     
     <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>　　最近写代码的时候发现一些java基础性的东西有些遗忘了，这是一件多么恐怖的事情，所以要狠心恶补一下java基础</p>
 <h3 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h3><h5 id="（一）static关键字的用途"><a href="#（一）static关键字的用途" class="headerlink" title="（一）static关键字的用途"></a>（一）static关键字的用途</h5><p>　　在《Java编程思想》P86页有这样一段话：</p>
 <p>　　<font color="#0099ff">“static方法就是没有this的方法。在static方法内部不能调用非静态方法，反过来是可以的。而且可以在没有创建任何对象的前提下，仅仅通过类本身来调用static方法。这实际上正是static方法的主要用途。”</font></p>
 <p>　　这段话虽然只是说明了static方法的特殊之处，但是可以看出static关键字的基本作用，简而言之，一句话来描述就是：<font color="red">方便在没有创建对象的情况下来进行调用（方法,变量）</font></p>
+<a id="more"></a>
 <p>　　很显然，被static关键字修饰的方法或者变量不需要依赖于对象来进行访问，只要类被加载了，就可以通过类名去进行访问。</p>
 <p>　　static可以用来修饰类的成员方法、类的成员变量，另外可以编写static代码块来优化程序性能。</p>
 <p>１）static变量</p>
@@ -176,7 +244,9 @@ myclass constructor
     <summary type="html">
     
       &lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;　　最近写代码的时候发现一些java基础性的东西有些遗忘了，这是一件多么恐怖的事情，所以要狠心恶补一下java基础&lt;/p&gt;
-&lt;h3 id=&quot;
+&lt;h3 id=&quot;正文&quot;&gt;&lt;a href=&quot;#正文&quot; class=&quot;headerlink&quot; title=&quot;正文&quot;&gt;&lt;/a&gt;正文&lt;/h3&gt;&lt;h5 id=&quot;（一）static关键字的用途&quot;&gt;&lt;a href=&quot;#（一）static关键字的用途&quot; class=&quot;headerlink&quot; title=&quot;（一）static关键字的用途&quot;&gt;&lt;/a&gt;（一）static关键字的用途&lt;/h5&gt;&lt;p&gt;　　在《Java编程思想》P86页有这样一段话：&lt;/p&gt;
+&lt;p&gt;　　&lt;font color=&quot;#0099ff&quot;&gt;“static方法就是没有this的方法。在static方法内部不能调用非静态方法，反过来是可以的。而且可以在没有创建任何对象的前提下，仅仅通过类本身来调用static方法。这实际上正是static方法的主要用途。”&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;　　这段话虽然只是说明了static方法的特殊之处，但是可以看出static关键字的基本作用，简而言之，一句话来描述就是：&lt;font color=&quot;red&quot;&gt;方便在没有创建对象的情况下来进行调用（方法,变量）&lt;/font&gt;&lt;/p&gt;
     
     </summary>
     
