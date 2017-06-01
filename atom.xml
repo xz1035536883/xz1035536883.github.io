@@ -51,19 +51,20 @@
     <link href="http://www.ryanhome.top/2017/06/01/hexo%E6%95%99%E7%A8%8B-hexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>http://www.ryanhome.top/2017/06/01/hexo教程-hexo-github搭建个人博客/</id>
     <published>2017-06-01T02:06:27.000Z</published>
-    <updated>2017-06-01T04:12:38.000Z</updated>
+    <updated>2017-06-01T04:29:34.000Z</updated>
     
-    <content type="html"><![CDATA[<p>###前言<br>拥有一个属于自己的独立博客是一件非常cool的事情，常规的方法是搭建服务器，然后对服务器进行部署是一件非常麻烦的事情。知道我无意之间发现了Hexo这个优秀的静态博客框架，再加上最近非常流行的github，这就组成了一个非常方便的博客系统，之前在网上查找教程磕磕碰碰遇到不少问题(可能是之前的教程比较老),自己写这个教程总结一下之前的问题教训，二是给其他想要搭建自己博客的童鞋提供一些参考</p>
-<p>###正文<br>本教程用的是windows+hexo目前最新版本</p>
+    <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>拥有一个属于自己的独立博客是一件非常cool的事情，常规的方法是搭建服务器，然后对服务器进行部署是一件非常麻烦的事情。知道我无意之间发现了Hexo这个优秀的静态博客框架，再加上最近非常流行的github，这就组成了一个非常方便的博客系统，之前在网上查找教程磕磕碰碰遇到不少问题(可能是之前的教程比较老),自己写这个教程总结一下之前的问题教训，二是给其他想要搭建自己博客的童鞋提供一些参考</p>
+<h3 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h3><p>本教程用的是windows+hexo目前最新版本</p>
 <hr>
-<p>#####（一）系统环境配置<br>使用Hexo之前需要在系统中安装一下工具</p>
+<h5 id="（一）系统环境配置"><a href="#（一）系统环境配置" class="headerlink" title="（一）系统环境配置"></a>（一）系统环境配置</h5><p>使用Hexo之前需要在系统中安装一下工具</p>
 <p><a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js</a></p>
 <p>作用:node.js用来创建hexo博客框架的，我当前安装版本为：v6.10.2</p>
 <p>安装教程：<a href="http://www.runoob.com/nodejs/nodejs-install-setup.html" target="_blank" rel="external">http://www.runoob.com/nodejs/nodejs-install-setup.html</a></p>
 <p>[git 客户端]</p>
 <p>作用：把本地的hexo内容提交到github上去，我当前安装的是v2.9.0</p>
 <p>下载地址：<a href="http://git-scm.com/download/" target="_blank" rel="external">http://git-scm.com/download/</a></p>
-<p>#####（二）安装Hexo<br>介绍几个hexo常用的命令，#后面为注释</p>
+<hr>
+<h5 id="（二）安装Hexo"><a href="#（二）安装Hexo" class="headerlink" title="（二）安装Hexo"></a>（二）安装Hexo</h5><p>介绍几个hexo常用的命令，#后面为注释</p>
 <pre> hexo g #完整命令hexo generate,用于生成静态文件
  hexo s #完整命令为hexo server,用于启动服务器，主要用来本地预览
  hexo d #完整命令为hexo deploy,用于将本地文件发布到github上
@@ -86,15 +87,15 @@
 <p><img src="hexos.png" alt=""></p>
 <p>然后用浏览器访问<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a>， 此时，你应该看到了一个漂亮的博客了，当然这个博客只是在本地的，别人是看不到的</p>
 <p><img src="yulan.png" alt=""></p>
-<p>#####（三）注册github账号</p>
-<p>已经有Github帐号跳过此步，首先进入Github进行注册，用户名、邮箱和密码之后都需要用到，自己记好。</p>
-<p>#####（四）创建repository</p>
-<p>repository相当于一个仓库，用来放置你的代码文件。首先，登陆进入Github，点击下图红圈地方</p>
+<hr>
+<h5 id="（三）注册github账号"><a href="#（三）注册github账号" class="headerlink" title="（三）注册github账号"></a>（三）注册github账号</h5><p>已经有Github帐号跳过此步，首先进入Github进行注册，用户名、邮箱和密码之后都需要用到，自己记好。</p>
+<hr>
+<h5 id="（四）创建repository"><a href="#（四）创建repository" class="headerlink" title="（四）创建repository"></a>（四）创建repository</h5><p>repository相当于一个仓库，用来放置你的代码文件。首先，登陆进入Github，点击下图红圈地方</p>
 <p><img src="github.png" alt=""></p>
 <p>创建时，只需要填写Repository name即可，当然这个名字的格式必须为youname.github.io，例如我的为xz1035536883.github.io</p>
 <p><img src="gitres.png" alt=""></p>
-<p>#####（五）部署本地文件到github</p>
-<p>既然Repository已经创建了，当然是先把博客放到Github上去看看效果。编辑E：\hexo下的_config.yml文件，建议使用sublime Text2。<br>在_config.yml最下方，添加如下配置(命令中的第一个xz1035536883为Github的用户名,第二个xz1035536883为之前New的Repository的名字,记得改成自己的。另外记得一点，hexo的配置文件中任何’:’后面都是带一个空格的)</p>
+<hr>
+<h5 id="（五）部署本地文件到github"><a href="#（五）部署本地文件到github" class="headerlink" title="（五）部署本地文件到github"></a>（五）部署本地文件到github</h5><p>既然Repository已经创建了，当然是先把博客放到Github上去看看效果。编辑E：\hexo下的_config.yml文件，建议使用sublime Text2。<br>在_config.yml最下方，添加如下配置(命令中的第一个xz1035536883为Github的用户名,第二个xz1035536883为之前New的Repository的名字,记得改成自己的。另外记得一点，hexo的配置文件中任何’:’后面都是带一个空格的)</p>
 <pre>
 deploy:
   type: git
@@ -145,7 +146,7 @@ hexo d
     
     <summary type="html">
     
-      &lt;p&gt;###前言&lt;br&gt;拥有一个属于自己的独立博客是一件非常cool的事情，常规的方法是搭建服务器，然后对服务器进行部署是一件非常麻烦的事情。知道我无意之间发现了Hexo这个优秀的静态博客框架，再加上最近非常流行的github，这就组成了一个非常方便的博客系统，之前在网上查找教程
+      &lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;拥有一个属于自己的独立博客是一件非常cool的事情，常规的方法是搭建服务器，然后对服务器进行部署是一件非常麻烦的事情。知道我无意之间发现了H
     
     </summary>
     
