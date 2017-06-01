@@ -5,10 +5,10 @@
     
   <url>
     <loc>http://www.ryanhome.top/2017/06/01/hexo%E6%95%99%E7%A8%8B-hexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2017-06-01T08:18:49.000Z</lastmod>
+    <lastmod>2017-06-01T09:21:02.000Z</lastmod>
     <data>
         <display>
-        <title>hexo教程: (-)hexo+github搭建个人博客</title>
+        <title>hexo教程: (一)hexo+github搭建个人博客</title>
         <pubTime>2017-06-01T02:06:27.000Z</pubTime>
         
         <tag>hexo</tag>
@@ -26,11 +26,33 @@
 
     
   <url>
-    <loc>http://www.ryanhome.top/2017/06/01/hexo-%E7%9A%84next%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/</loc>
-    <lastmod>2017-06-01T08:18:30.000Z</lastmod>
+    <loc>http://www.ryanhome.top/2017/06/01/hexo%E6%89%98%E7%AE%A1%E5%88%B0github%E5%92%8Ccoding/</loc>
+    <lastmod>2017-06-01T09:19:06.000Z</lastmod>
     <data>
         <display>
-        <title>hexo 的next主题优化</title>
+        <title>hexo教程: (五)hexo托管到github和coding</title>
+        <pubTime>2017-06-01T07:09:18.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+        <tag>前端</tag>
+         
+         
+           
+             
+              <breadCrumb title="hexo系列教程" url="http://www.ryanhome.top/categories/hexo%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.ryanhome.top/2017/06/01/hexo-%E7%9A%84next%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/</loc>
+    <lastmod>2017-06-01T09:18:51.000Z</lastmod>
+    <data>
+        <display>
+        <title>hexo教程: (三)hexo 的next主题优化</title>
         <pubTime>2017-06-01T05:07:43.000Z</pubTime>
         
         <tag>hexo</tag>
@@ -48,11 +70,33 @@
 
     
   <url>
-    <loc>http://www.ryanhome.top/2017/06/01/hexo-%E4%B8%BB%E9%A2%98%E4%B8%8B%E8%BD%BD%E5%8F%8A%E9%85%8D%E7%BD%AE/</loc>
-    <lastmod>2017-06-01T08:18:14.000Z</lastmod>
+    <loc>http://www.ryanhome.top/2017/06/01/hexo-%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0/</loc>
+    <lastmod>2017-06-01T09:18:45.000Z</lastmod>
     <data>
         <display>
-        <title>hexo 主题下载及配置</title>
+        <title>hexo教程: (四)hexo 新建文章</title>
+        <pubTime>2017-06-01T06:57:29.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+        <tag>前端</tag>
+         
+         
+           
+             
+              <breadCrumb title="hexo系列教程" url="http://www.ryanhome.top/categories/hexo%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.ryanhome.top/2017/06/01/hexo-%E4%B8%BB%E9%A2%98%E4%B8%8B%E8%BD%BD%E5%8F%8A%E9%85%8D%E7%BD%AE/</loc>
+    <lastmod>2017-06-01T09:18:38.000Z</lastmod>
+    <data>
+        <display>
+        <title>hexo教程: (二)hexo 主题下载及配置</title>
         <pubTime>2017-06-01T04:32:21.000Z</pubTime>
         
         <tag>hexo</tag>
@@ -75,7 +119,7 @@
     <data>
         <display>
         <title>Hello World</title>
-        <pubTime>2017-06-01T08:16:26.139Z</pubTime>
+        <pubTime>2017-06-01T09:17:57.878Z</pubTime>
         
         <tag>hexo</tag>
          
@@ -83,50 +127,6 @@
            
              
               <breadCrumb title="hexo简介" url="http://www.ryanhome.top/categories/hexo%E7%AE%80%E4%BB%8B/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.ryanhome.top/2017/06/01/hexo-%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0/</loc>
-    <lastmod>2017-06-01T07:20:54.000Z</lastmod>
-    <data>
-        <display>
-        <title>hexo 新建文章</title>
-        <pubTime>2017-06-01T06:57:29.000Z</pubTime>
-        
-        <tag>hexo</tag>
-         
-        <tag>前端</tag>
-         
-         
-           
-             
-              <breadCrumb title="hexo系列教程" url="http://www.ryanhome.top/categories/hexo%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.ryanhome.top/2017/06/01/hexo%E6%89%98%E7%AE%A1%E5%88%B0github%E5%92%8Ccoding/</loc>
-    <lastmod>2017-06-01T07:12:50.000Z</lastmod>
-    <data>
-        <display>
-        <title>hexo托管到github和coding</title>
-        <pubTime>2017-06-01T07:09:18.000Z</pubTime>
-        
-        <tag>hexo</tag>
-         
-        <tag>前端</tag>
-         
-         
-           
-             
-              <breadCrumb title="hexo系列教程" url="http://www.ryanhome.top/categories/hexo%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B/"/>
           
         </display>
     </data>
