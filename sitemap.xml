@@ -2,23 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.ryanhome.top/tags/index.html</loc>
+    <loc>http://www.ryanhome.top/2017/06/01/hexo%E6%95%99%E7%A8%8B-hexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</loc>
     
-    <lastmod>2017-05-02T03:58:23.000Z</lastmod>
+    <lastmod>2017-06-01T04:12:38.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.ryanhome.top/2017/06/01/hello-world/</loc>
+    
+    <lastmod>2017-06-01T02:03:15.000Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.ryanhome.top/categories/index.html</loc>
     
-    <lastmod>2017-05-02T03:58:13.000Z</lastmod>
+    <lastmod>2017-06-01T02:01:21.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.ryanhome.top/2017/05/03/hello-world/</loc>
+    <loc>http://www.ryanhome.top/tags/index.html</loc>
     
-    <lastmod>2017-04-25T15:41:53.000Z</lastmod>
+    <lastmod>2017-05-02T03:58:23.000Z</lastmod>
     
   </url>
   
