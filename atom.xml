@@ -186,9 +186,9 @@ public class StudentTest {
       <category term="java基础" scheme="http://www.ryanhome.top/categories/java%E5%9F%BA%E7%A1%80/"/>
     
     
-      <category term="构造函数" scheme="http://www.ryanhome.top/tags/%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0/"/>
-    
       <category term="java" scheme="http://www.ryanhome.top/tags/java/"/>
+    
+      <category term="构造函数" scheme="http://www.ryanhome.top/tags/%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0/"/>
     
   </entry>
   
@@ -253,9 +253,9 @@ public class StudentTest {
       <category term="java基础" scheme="http://www.ryanhome.top/categories/java%E5%9F%BA%E7%A1%80/"/>
     
     
-      <category term="构造函数" scheme="http://www.ryanhome.top/tags/%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0/"/>
-    
       <category term="java" scheme="http://www.ryanhome.top/tags/java/"/>
+    
+      <category term="构造函数" scheme="http://www.ryanhome.top/tags/%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0/"/>
     
   </entry>
   
@@ -397,9 +397,9 @@ myclass constructor
       <category term="java基础" scheme="http://www.ryanhome.top/categories/java%E5%9F%BA%E7%A1%80/"/>
     
     
-      <category term="java" scheme="http://www.ryanhome.top/tags/java/"/>
-    
       <category term="static" scheme="http://www.ryanhome.top/tags/static/"/>
+    
+      <category term="java" scheme="http://www.ryanhome.top/tags/java/"/>
     
   </entry>
   
